@@ -1,33 +1,10 @@
-## Seva Kitchen Website Project
-
-
-### Introduction
-
-Check out the introduction video to know why we are doing what we are doing and how it will impact Seva Kitchen.
-
-[![Introduction to the Seva Kitchen website project](https://i.imgur.com/01NCCuS.png)](https://www.youtube.com/watch?v=ub3wKcvwhUo&feature=youtu.be "Introduction to the Seva Kitchen project")
-
-
-### Contribution Instructions
-
-- Create a branch from the master branch with the following format - (your name) + "/" (few words for task you are working on). For eg. "saumitra/initiative-card"
-
-- Once you are done with your task, push your changes in your branch.
-
-- Raise a pull request from your branch to master.
-
-- Your code changes will be reviewed by mentors. Please push the changes as suggested by mentors, unless you disagree, in which case, we encourage you to make your case.
-
-- If you saw a lot of foreign words in these instructions, don't worry, there are many awesome GitHub guides on the internet that cover all these buzz words. One of them is here - http://rogerdudler.github.io/git-guide/ . This will get you started right away.
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Available Scripts
+## Available Scripts
 
 In the project directory, you can run:
 
-#### `npm start`
+### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -35,12 +12,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-#### `npm test`
+### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### `npm run build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -50,7 +27,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### `npm run eject`
+### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -66,26 +43,26 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-#### Code Splitting
+### Code Splitting
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-#### Analyzing the Bundle Size
+### Analyzing the Bundle Size
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-#### Making a Progressive Web App
+### Making a Progressive Web App
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-#### Advanced Configuration
+### Advanced Configuration
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-#### Deployment
+### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-#### `npm run build` fails to minify
+### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
