@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import LandingSectionOne from "./LandingSectionOne";
+import LandingSectionTwo from "./LandingSectionTwo";
 
 
 export default class LandingPage extends Component {
@@ -7,6 +9,9 @@ export default class LandingPage extends Component {
   }
 
   render(){
-    return <h1>Hello World Proso.io!</h1>
+    return <div class="landingPageContainer">
+      <LandingSectionOne />
+      <LandingSectionTwo />
+    </div>
   }
 }
