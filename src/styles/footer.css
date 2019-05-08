@@ -1,0 +1,39 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.footer {
+  background-color: #b97126;
+  padding: 10px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 720px) {
+  .footer {
+    display: flex;
+  }
+}
+.footer-logo {
+  flex: 1;
+  font-weight: bold;
+  margin: 10px;
+}
+.footer-info {
+  flex: 1;
+  margin: 10px;
+}
+.footer-social {
+  flex: 1;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+.footer-address {
+  flex: 1;
+  margin: 10px;
+}
+.social-links {
+  text-decoration: none;
+  color: white;
+}
+a {
+  color: white;
+}
