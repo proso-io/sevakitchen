@@ -23,18 +23,27 @@
 .footer-info {
   flex: 1;
   margin: 10px;
+  font-weight: bold;
 }
 .footer-social {
   flex: 1;
   margin: 10px;
   text-decoration: none;
+  font-weight: bold;
   color: white;
 }
 .footer-address {
   flex: 1;
   margin: 10px;
+  font-weight: bold;
 }
-.social-links {
+.footer-children {
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+}
+/* To create non-underlined links...*/
+.links {
   text-decoration: none;
   color: white;
 }
