@@ -1,3 +1,6 @@
+/* This stylesheet is for footer and contains classes
+ related to elements in the footer */
+
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 .footer {
   background-color: #b97126;
@@ -5,12 +8,13 @@
   color: white;
   margin-bottom: 15px;
 }
-
+/* main footer style class */
 @media (min-width: 720px) {
   .footer {
     display: flex;
   }
 }
+/* for small mobile screens */
 .footer-logo {
   flex: 1;
   font-weight: bold;
