@@ -18,6 +18,8 @@ Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
+If you saw a lot of foreign words in these instructions, don't worry, there are many awesome GitHub guides on the internet that cover all these buzz words. One of them is here - http://rogerdudler.github.io/git-guide/ . This will get you started right away.
+
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
