@@ -1,21 +1,23 @@
 import React, { Component } from "react";
 import "../styles/footer.css";
+/** importing the react component code from the React module  */
+
 
 class Footer extends Component {
-  state = {};
+  state = {}; /**No props are required..state object can be removed */
   render() {
     return (
-      <div className="footer">
-        <div className="footer-logo">SEVAKITCHEN</div>
+      <div className="footer">{/** main wrapper div here i.e footer (parent component)*/}
+        <div className="footer-logo">SEVAKITCHEN</div>{/** sevakitchen text */}
         <div className="footer-info">
           Coordinator's login
           <br />
           Paste Our Posters
         </div>
-        <div className="footer-social">
+        <div className="footer-social">{/** sevakitchen social links */}
           <a className="social-links" href="#">
             <i className="fa fa-whatsapp" />
-            &nbsp;Whatsapp
+            &nbsp;Whatsapp{/** &nbsp; is used to give space */}
           </a>
           <br />
           <a href="#" className="social-links">
@@ -28,7 +30,7 @@ class Footer extends Component {
             &nbsp;Instagram
           </a>
         </div>
-        <div className="footer-address">
+        <div className="footer-address">{/**sevakitchen addresss part */}
           <p>
             Mr.Khushroo Poacha
             <br />
@@ -48,3 +50,4 @@ class Footer extends Component {
 }
 
 export default Footer;
+/**Exporting the Footer class */
