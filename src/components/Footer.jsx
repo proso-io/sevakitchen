@@ -6,7 +6,6 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        {" "}
         {/**main wrapper for the footer */}
         <div className="footer-logo">
           {/**main info and links from footer data  */}
