@@ -1,4 +1,4 @@
-const arr = [
+const footer_data = [
   {
     title: "Seva Partners",
     children: [
@@ -29,4 +29,4 @@ const arr = [
   }
 ];
 
-export default arr;
+export default footer_data;
