@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
   }
 
   render(){
-    return <div class="landingPageContainer">
+    return <div className="landingPageContainer">
       <LandingSectionOne />
       <LandingSectionTwo />
     </div>
