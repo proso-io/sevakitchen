@@ -1,0 +1,67 @@
+/* This stylesheet is for footer and contains classes
+ related to elements in the footer */
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.footer {
+  background-color: #b97126;
+  padding: 10px;
+  color: white;
+  padding-bottom: 15px;
+}
+/* main footer style class */
+@media (min-width: 720px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+/* for small mobile screens */
+.footer-logo {
+  flex: 1;
+  font-weight: bold;
+  margin: 10px;
+}
+.footer-parent {
+  flex: 1;
+  font-weight: bold;
+  margin: 10px;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+/* .footer-info {
+  flex: 1;
+  margin: 10px;
+  font-weight: bold;
+}
+.footer-social {
+  flex: 1;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.footer-address {
+  flex: 1;
+  margin: 10px;
+  font-weight: bold;
+} */
+.footer-children {
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+}
+/* To create non-underlined links...*/
+.links {
+  text-decoration: none;
+  color: white;
+}
+a {
+  color: white;
+}
+.footer-column-title {
+  font-weight: bold;
+}
