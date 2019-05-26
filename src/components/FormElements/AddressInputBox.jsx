@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './AddressInputBox.css'
-import keys from '../config';
+import keys from './config';
 
 class AddressInputBox extends Component {
     state = {
