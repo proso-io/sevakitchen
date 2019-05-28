@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import keys from './config'
 import './AddressInputBox.css'
-import keys from './config';
 
 class AddressInputBox extends Component {
-    state = {
-        value: '',
-        predictions: []
+    constructor(props) {
+        super(props)
+        this.state = {
+            suggestions: [],
+            value: ''
+        }
     }
     handleChange = (e) => {
         this.setState({ value: e.target.value })
@@ -13,21 +16,37 @@ class AddressInputBox extends Component {
             .then((res) => res.json())
             .then((result) => {
                 this.setState({
-                    predictions: result.predictions
+                    suggestions: result.predictions,
                 })
+                if (result.predictions.length > 0) {
+                    this.setState({
+                        isSuggestions: true
+                    })
+                } else {
+                    this.setState({
+                        isSuggestions: false
+                    })
+                }
             })
+    }
+    selectValue = (e) => {
+        this.setState({
+            value: e.target.innerHTML,
+            suggestions: []
+        })
     }
     render() {
         return (
-            <div className="autocomplete">
-                <label htmlFor="address">Your Location (we'll use this to connect you to chapters in your area)</label>
-                <input name="address" id="address" list="data-list" type="text" onChange={this.handleChange} placeholder="Start Typing"></input>
-                <div className="predictions">
-                    <datalist id="data-list" className="results">
-                        {this.state.predictions.map((children) => {
-                            return (<option key={children.id}>{children.description}</option>)
-                        })}
-                    </datalist>
+            <div className="component-wrapper">
+                <div className="wrapper">
+                    <input type="text" value={this.state.value} onChange={this.handleChange} name="location" />
+                    {this.state.isSuggestions &&
+                        <ul>
+                            {this.state.suggestions.map((child) => {
+                                return (<li onClick={this.selectValue}>{child.description}</li>)
+                            })}
+                        </ul>
+                    }
                 </div>
             </div>);
     }
