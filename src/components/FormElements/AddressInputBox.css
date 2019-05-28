@@ -1,14 +1,41 @@
-.autocomplete{
-    width:auto;
-}
-#address{
-    border:1 px solid black ;
-    padding:10px;
-    font-size:16px;
-    width:300px;
+.wrapper{
+    width:100%;
+    border: 1px solid grey;
+    box-shadow: 0 0 0  1px rgba(0,0,0,.1), 0,2px 4px 1px rgba(0,0,0,.18);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:rgba(0,0,0,0.73)
 }
 
-.predictions{
-    box-sizing: content-box;
-    border-radius: 5px;
+.wrapper input{
+    width:100%;
+    border:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:rgba(0,0,0,0.73);
+    padding: 10px  5px;
+    box-sizing:border-box;
+    outline:none;
+}
+.component-wrapper{
+    margin: 150px auto 0 auto;
+    width: 80%;
+}
+.wrapper ul{
+    list-style-type:none;
+    text-align:left;
+    margin:0;
+    padding:0;
+    border-top: 1px solid grey
+
+}
+.wrapper ul::before{
+    content:""
+}
+.wrapper li{
+    padding: 10px 5px;
+    cursor:pointer;
+}
+.wrapper li:hover{
+    background-color: rgba(128,128,0.20);
 }
