@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "../styles/InitiativeCard.css";
 
 export default function InitiativeCard(props){
@@ -17,3 +18,9 @@ export default function InitiativeCard(props){
     </div>
   );
 }
+
+InitiativeCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};
