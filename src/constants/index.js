@@ -1,4 +1,4 @@
-const feature_data = [
+export const feature_data = [
     { "img": "/images/Image8.png", "link": "#" },
     { "img": "/images/Image9.png", "link": "#" },
     { "img": "/images/Image10.png", "link": "#" },
@@ -11,5 +11,10 @@ const feature_data = [
     { "img": "/images/Image17.png", "link": "#" },
     { "img": "/images/Image18.png", "link": "#" },
     { "img": "/images/Image19.png", "link": "#" },
-]
-export default feature_data;
+];
+
+export const navbarLinks = [
+  {title: "LOGIN", link: "/login"},
+  {title: "SIGNUP", link: "/signup"},
+  {title: "CONTACT", link: "/contact"}
+];
