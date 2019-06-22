@@ -9,9 +9,9 @@ class LandingSectionTwo extends Component {
       <div>
         <h2 className="ls2-title">FEATURED IN</h2>
         <div className="ls2-container">
-          {feature_data.map(children => {
+          {feature_data.map((children, idx) => {
             return (
-              <div className="ls2-children">
+              <div key={idx} className="ls2-children">
                 <a href={children.link}>
                   <img className="ls2-logo" src={children.img} alt="logo" />
                 </a>
