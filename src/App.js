@@ -3,12 +3,14 @@ import logo from './logo.svg';
 import LandingPage from './components/pages/Landing';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import NavBar from './components/NavBar';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <NavBar />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
