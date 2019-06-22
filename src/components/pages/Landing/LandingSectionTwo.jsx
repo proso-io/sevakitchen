@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import feature_data from "../Constants/index.js";
+import feature_data from "../../../constants/index.js";
 import "../../../styles/LandingSectionTwo.css";
 
 class LandingSectionTwo extends Component {

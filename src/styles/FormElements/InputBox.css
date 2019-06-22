@@ -1,0 +1,20 @@
+.inputbox {
+  width: 100%;
+}
+
+.inputbox label {
+
+}
+
+.inputbox textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  font-size: inherit;
+  border: 2px solid #888;
+  min-height: 24px;
+  padding: 14px 9px;
+  margin-top: 5px;
+  height: 0px;
+  white-space: nowrap;
+}
