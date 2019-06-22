@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import "../styles/NavBar.scss";
 import { navbarLinks } from "../constants/index";
 
 class NavBar extends Component {
 
   render(){
-    console.log(navbarLinks);
     return (
       <div className="navbar">
         <div className="navbar-left">
@@ -17,7 +15,7 @@ class NavBar extends Component {
         <div className="navbar-right">
           {
             navbarLinks.map((item) => (
-              <div className="navbar-link">
+              <div className="navbar-link" key={item.title}>
                 <a href={item.link}>
                   {item.title}
                 </a>

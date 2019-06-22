@@ -9,11 +9,11 @@ class Footer extends Component {
         {/**main wrapper for the footer */}
         {footer_data.map(title => {
           return (
-            <div className="footer-column">
+            <div key={title.title} className="footer-column">
               <div className="footer-column-title">{title.title}</div>
               {title.children.map(children => {
                 return (
-                  <a className="links" href={children.link}>
+                  <a key={children.label} className="links" href={children.link}>
                     <div>{children.label}</div>
                   </a>
                 );
