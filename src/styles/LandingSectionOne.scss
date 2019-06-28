@@ -1,0 +1,44 @@
+.landing-section-1 {
+  text-align: center;
+  background-color: #FEF1C6;
+  padding: 20px 0 0 0;
+  position: relative;
+  color: #e8b340;
+
+  h1 {
+    margin: 0;
+  }
+
+  .tagline {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trapezium {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    .triangle {
+      border-top: 200px solid transparent;
+	    border-left: 100vw solid #e8b340;
+    }
+
+    .rect {
+      height: 40%;
+      width: 100%;
+      background: #e8b340;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+
+}
