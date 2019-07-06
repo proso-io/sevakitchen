@@ -9,12 +9,9 @@ export default function InitiativeCard(props){
         <img src={props.img} className="image" />
       </div>
       <div className="body-container">
-        <h3>{props.title}</h3>
+        <h4>{props.title}</h4>
         <p>{props.description}</p>
       </div>
-      <button className="contribute-button">
-        <h3>CONTRIBUTE</h3>
-      </button>
     </div>
   );
 }

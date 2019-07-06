@@ -5,12 +5,31 @@
   position: relative;
   color: #e8b340;
 
+  .ctaGroup {
+    display: flex;
+    min-width: 30%;
+    width: 32%;
+    margin: 5vh auto;
+    justify-content: space-between;
+
+    .primaryBtn {
+      border: 1px solid #DE911D;
+      border-radius: 25px;
+      padding: 14px;
+      color: #DE911D;
+      outline: none;
+      cursor: pointer;
+      background: white;
+      margin: 5px;
+    }
+  }
+
   h1 {
     margin: 0;
   }
 
   .tagline {
-    max-width: 450px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -39,6 +58,18 @@
   .content {
     position: relative;
     z-index: 2;
+    margin-top: 15vh;
+    padding: 10px;
   }
 
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-section-1 {
+
+    .ctaGroup {
+      width: 90%;
+    }
+
+  }
 }
