@@ -19,10 +19,10 @@ class InputBox extends Component {
       <div className={"form-element inputbox" + (this.props.id ? (" " + this.props.id) : "")}>
         <label>{this.props.label}
           <input
+            id={this.props.id}
             value={this.props.value}
             onChange={this.handleChange}
-            placeholder={this.props.placeholder}
-            type={this.props.inputType}
+            {...this.props.inputProps}
             />
         </label>
       </div>
@@ -33,18 +33,17 @@ class InputBox extends Component {
 InputBox.propTypes = {
   label: PropTypes.string,
   onChange: PropTypes.func,
-  placeholder: PropTypes.string,
   value: PropTypes.string,
   id: PropTypes.string,
-  inputType: PropTypes.string
+  inputProps: PropTypes.object
 }
 
 InputBox.defaultProps = {
   label: "",
-  placeholder: "",
   value: "",
   id: null,
-  inputType: "text"
+  inputProps: {},
+  onChange: function(data,id){}
 }
 
 export default InputBox;

@@ -23,48 +23,61 @@ class ContributeForm extends React.Component {
     })
   }
 
-  onSubmit(){
+  onSubmit(e){
+    e.preventDefault();
+    this.state.data.address = this.state.data.address.description;
     this.props.onSubmitClicked(this.state.data);
   }
 
   render(){
     return (
-      <form className="form-container contribute-form">
+      <form onSubmit={this.onSubmit} className="form-container contribute-form">
         <h2 className="title">
           Contribute
         </h2>
         <p className="description">
-          Fill this form to be able to contribute to Seva Kitchen. An email will be sent to provided email address
+          Fill this form to be able to contribute to Seva Kitchen. An email will be sent to provided email address.
         </p>
         <div className="form-inputs">
           <InputBox
-            label="Your Name"
-            placeholder="Eg. John Doe"
             id="name"
             onChange={this.onValueChange}
+            label="Your Name"
             value={this.state.data.name}
+            inputProps={{
+              placeholder: "Eg. John Doe"
+            }}
             />
           <InputBox
             label="Your Email Address"
-            placeholder="Eg. hello@world.com"
             id="email"
             onChange={this.onValueChange}
             value={this.state.data.email}
-            type="email"
+            inputProps={{
+              placeholder: "Eg. hello@world.com",
+              type: "email"
+            }}
             />
           <AddressInputBox
             label="Your location (we'll use this to connect you to chapters in your area)"
             id="address"
-            onChange={this.onValueChange}
+            onAddressSelected={this.onValueChange}
             value={this.state.data.address}
+            inputProps={{
+              placeholder: "Start typing..."
+            }}
             />
           <InputBox
-            label="Phone Number"
-            placeholder="Eg. 9876543210"
+            label="Phone Number (Enter 10 digit phone number)"
             id="phone"
             onChange={this.onValueChange}
             value={this.state.data.phone}
-            type="number"
+            inputType="tel"
+            inputProps={{
+              placeholder: "Eg. 9876543210",
+              type: "tel",
+              pattern: '^\\+?\\d{10}$'
+            }}
             />
           <InputBox
             label="Your Name"
@@ -73,7 +86,7 @@ class ContributeForm extends React.Component {
             onChange={this.onValueChange}
             value={this.state.data.name}
             />
-          <button className="primaryBtn form-element" onClick={this.onSubmit}>Submit</button>
+          <input type="submit" className="primary-button form-element" value="Submit"/>
         </div>
       </form>
     )

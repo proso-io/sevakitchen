@@ -21,6 +21,11 @@ class AddressInputBox extends Component {
         <GooglePlacesAutocomplete
           onSelect={this.onAddressSelected}
           placeholder={this.props.placeholder}
+          autocompletionRequest={{
+            componentRestrictions: {
+              country: ['in']
+            }
+          }}
         />
         </label>
       </div>

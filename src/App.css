@@ -32,6 +32,17 @@
   width: 100%;
 }
 
+.primary-button {
+  border: 1px solid #DE911D;
+  border-radius: 25px;
+  padding: 14px;
+  color: #DE911D;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  margin: 5px;
+}
+
 .form-element {
   margin-top: 25px;
 }
