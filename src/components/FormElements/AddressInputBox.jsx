@@ -5,12 +5,21 @@ import "../../styles/FormElements/AddressInputBox.scss";
 
 class AddressInputBox extends Component {
 
+  constructor(props){
+    super(props);
+    this.onAddressSelected = this.onAddressSelected.bind(this);
+  }
+
+  onAddressSelected(data){
+    this.props.onAddressSelected(data, this.props.id)
+  }
+
   render(){
     return (
-      <div className="addressinputbox">
+      <div className={"form-element addressinputbox" + (this.props.id ? (" " + this.props.id) : "")}>
         <label>{this.props.label}
         <GooglePlacesAutocomplete
-          onSelect={this.props.onAddressSelected}
+          onSelect={this.onAddressSelected}
           placeholder={this.props.placeholder}
         />
         </label>
@@ -23,12 +32,14 @@ AddressInputBox.propTypes = {
   label: PropTypes.string,
   onAddressSelected: PropTypes.func,
   placeholder: PropTypes.string,
+  id: PropTypes.string
 }
 
 AddressInputBox.defaultProps = {
   label: "Select Location",
   placeholder: "Start Typing",
-  onAddressSelected: function(){}
+  onAddressSelected: function(){},
+  id: null
 }
 
 export default AddressInputBox;

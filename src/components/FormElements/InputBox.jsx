@@ -10,18 +10,19 @@ class InputBox extends Component {
   }
 
   handleChange(inputEvent){
-    this.props.onChange(inputEvent.target.value);
+    this.props.onChange(inputEvent.target.value, this.props.id);
   }
 
 
   render(){
     return (
-      <div className="inputbox">
+      <div className={"form-element inputbox" + (this.props.id ? (" " + this.props.id) : "")}>
         <label>{this.props.label}
-          <textarea
+          <input
             value={this.props.value}
             onChange={this.handleChange}
             placeholder={this.props.placeholder}
+            type={this.props.inputType}
             />
         </label>
       </div>
@@ -33,13 +34,17 @@ InputBox.propTypes = {
   label: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
-  value: PropTypes.string
+  value: PropTypes.string,
+  id: PropTypes.string,
+  inputType: PropTypes.string
 }
 
 InputBox.defaultProps = {
   label: "",
   placeholder: "",
-  value: ""
+  value: "",
+  id: null,
+  inputType: "text"
 }
 
 export default InputBox;

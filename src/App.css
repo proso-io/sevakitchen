@@ -31,3 +31,29 @@
 .landingPageContainer {
   width: 100%;
 }
+
+.form-element {
+  margin-top: 25px;
+}
+
+.form-inputs {
+  width: 80%;
+}
+
+.form-container {
+  padding: 20px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-inputs {
+    width: 90%;
+  }
+
+  .form-container {
+    padding: 20px 10px;
+  }
+}
+
+.form-container .description {
+  line-height: 1.5;
+}
