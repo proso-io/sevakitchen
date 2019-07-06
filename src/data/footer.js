@@ -1,6 +1,6 @@
 const footer_data = [
   {
-    title: "Seva Partners",
+    title: "SEVA PARTNERS",
     children: [
       { icon: "", label: "Proso.io", link: "#" },
       { icon: "", label: "Giving Tuesday India", link: "#" },
@@ -8,11 +8,11 @@ const footer_data = [
     ]
   },
   {
-    title: "Seva Stats",
+    title: "SEVA STATS",
     children: [{ label: "1234 Donors" }, { label: "560 Receiver Volunteers" }]
   },
   {
-    title: "Social links",
+    title: "SOCIAL LINKS",
     children: [
       { icon: "fa fa-whatsapp", label: "WhatsApp", link: "#" },
       { icon: "fa fa-instagram", label: "Instagram", link: "#" },
@@ -21,7 +21,7 @@ const footer_data = [
   },
 
   {
-    title: "Seva Locations",
+    title: "SEVA LOCATIONS",
     children: [
       { link: "#", label: "More than hundred hospitals" },
       { link: "#", label: "50 Schools" }

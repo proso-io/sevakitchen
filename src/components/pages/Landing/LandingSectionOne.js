@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import InitiativeGroup from "../../InitiativeGroup";
+import { initiativeCardsData } from "../../../constants";
 import "../../../styles/LandingSectionOne.scss";
 
 
@@ -17,16 +18,13 @@ export default class LandingSectionOne extends Component {
       </div>
         <div className="content">
           <h1>SERVING A PLATEFUL OF LOVE</h1>
-          <h4 className="tagline">Seva kitchen helps feed the needy through it's various initiatives</h4>
+          <h4 className="tagline">Seva kitchen helps feed the needy through it's various initiatives.</h4>
+          <div className="ctaGroup">
+            <button className="primaryBtn"><h4>CONTRIBUTE TO A SEVA</h4></button>
+            <button className="primaryBtn"><h4>REQUEST A SEVA (FOR NGOs)</h4></button>
+          </div>
           <InitiativeGroup
-            data = {[
-              {img: "/images/headericon.jpg", title: "Title1", description: "Desription 1"},
-              {img: "/images/headericon.jpg", title: "Title2", description: "Desription 1"},
-              {img: "/images/headericon.jpg", title: "Title3", description: "Desription 1"},
-              {img: "/images/headericon.jpg", title: "Title4", description: "Desription 1"},
-              {img: "/images/headericon.jpg", title: "Title5", description: "Desription 1"},
-              {img: "/images/headericon.jpg", title: "Title6", description: "Desription 1"}
-            ]}
+            data = {initiativeCardsData}
             />
         </div>
       </div>

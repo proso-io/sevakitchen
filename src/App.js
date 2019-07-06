@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavBar from './components/NavBar';
 import './App.css';
 import Landing from './components/pages/Landing';
+import Modal from './components/Modal';
 
 function App() {
   return (

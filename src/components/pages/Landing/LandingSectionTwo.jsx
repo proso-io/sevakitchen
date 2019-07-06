@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { feature_data } from "../../../constants/index.js";
+import { feature_data } from "../../../constants";
 import "../../../styles/LandingSectionTwo.css";
 
 class LandingSectionTwo extends Component {
@@ -7,7 +7,7 @@ class LandingSectionTwo extends Component {
   render() {
     return (
       <div>
-        <h2 className="ls2-title">FEATURED IN</h2>
+        <h1 className="ls2-title">FEATURED IN</h1>
         <div className="ls2-container">
           {feature_data.map((children, idx) => {
             return (
