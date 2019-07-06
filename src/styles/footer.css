@@ -31,6 +31,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding-bottom: 10px;
+  margin: 10px;
+  justify-content: flex-start;
 }
 /* .footer-info {
   flex: 1;
@@ -58,10 +60,11 @@
 .links {
   text-decoration: none;
   color: white;
+  padding: 4px;
 }
 a {
   color: white;
 }
 .footer-column-title {
-  font-weight: bold;
+  margin-bottom: 5px;
 }

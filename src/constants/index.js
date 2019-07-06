@@ -14,7 +14,16 @@ export const feature_data = [
 ];
 
 export const navbarLinks = [
-  {title: "LOGIN", link: "/login"},
-  {title: "SIGNUP", link: "/signup"},
-  {title: "CONTACT", link: "/contact"}
+  // {title: "LOGIN", link: "/login"},
+  // {title: "SIGNUP", link: "/signup"},
+  // {title: "CONTACT", link: "/contact"}
+];
+
+export const initiativeCardsData = [
+  {img: "/images/default.png", title: "Neki Ka Pitara", description: "Seva Kitchen has installed Neki Ka Patara or Fridge of Kindness at the various Hospitals and Schools of Underprivileged Children. These fridges are filled by a team of Sevaks and cater to the needy 365 days of the year. You can fill up the fridge with Apples, Bananas, Grapes, Sofit, Amul Kool, Amul Lassi, Biscuits, Rajgira Chikki, Milk and Eggs."},
+  {img: "/images/jarsofkindness.png", title: "Jars of Kindness", description: "The Seva Kitchen Android App is a very powerful tool for sharing food real time. Using our app, you can donate food or find food for people in need. Once you download the App, we have a very simple registration process. You can sign up as a Donor, as Receiver or as both."},
+  {img: "/images/sevakitchenapp.png", title: "Seva Kitchen App", description: "The Seva Kitchen Android App is a very powerful tool for sharing food real time. Using our app, you can donate food or find food for people in need. Once you download the App, we have a very simple registration process. You can sign up as a Donor, as Receiver or as both."},
+  {img: "/images/sevatiffin.jpeg", title: "Cook and Serve", description: "The Seva Kitchen Android App is a very powerful tool for sharing food real time. Using our app, you can donate food or find food for people in need. Once you download the App, we have a very simple registration process. You can sign up as a Donor, as Receiver or as both."},
+  {img: "/images/default.png", title: "Milk and Eggs", description: "The Seva Kitchen Android App is a very powerful tool for sharing food real time. Using our app, you can donate food or find food for people in need. Once you download the App, we have a very simple registration process. You can sign up as a Donor, as Receiver or as both."},
+  {img: "/images/default.png", title: "Loaf of Kindness", description: "The Seva Kitchen Android App is a very powerful tool for sharing food real time. Using our app, you can donate food or find food for people in need. Once you download the App, we have a very simple registration process. You can sign up as a Donor, as Receiver or as both."}
 ];

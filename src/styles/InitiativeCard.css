@@ -1,24 +1,24 @@
 .initiative-card {
-  min-width: 30%;
-  max-width: 275px;
+  min-width: 25%;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  height: 450px;
+  height: 400px;
   box-shadow: 1px 2px 3px #ddd;
-  color: #DE911D
+  color: #DE911D;
 }
 .initiative-card .image-container {
   width: 100%;
-  height: 45%;
+  height: 50%;
   overflow: hidden;
 }
 .initiative-card .image-container .image {
   width: 100%;
 }
 .initiative-card .body-container {
-  height: 45%;
+  height: 50%;
   padding: 10px;
   text-align: justify;
   background: white;
