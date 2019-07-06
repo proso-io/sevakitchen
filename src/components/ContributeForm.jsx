@@ -4,6 +4,7 @@ import "../styles/ContributeForm.scss";
 import { initiativeCardsData } from '../constants';
 import InputBox from './FormElements/InputBox';
 import AddressInputBox from './FormElements/AddressInputBox';
+import Select from './FormElements/Select';
 
 class ContributeForm extends React.Component {
 
@@ -14,6 +15,17 @@ class ContributeForm extends React.Component {
     }
     this.onValueChange = this.onValueChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.initData();
+  }
+
+  initData(){
+    this.initiativeOptions = initiativeCardsData.map(ini => {
+      return {
+        value: ini.id,
+        label: ini.title
+      }
+    })
+    this.state.data.initiative = this.state.data.initiative || this.initiativeOptions[0];
   }
 
   onValueChange(value,id){
@@ -26,6 +38,7 @@ class ContributeForm extends React.Component {
   onSubmit(e){
     e.preventDefault();
     this.state.data.address = this.state.data.address.description;
+    this.state.data.initiative = this.state.data.initiative.value;
     this.props.onSubmitClicked(this.state.data);
   }
 
@@ -45,7 +58,8 @@ class ContributeForm extends React.Component {
             label="Your Name"
             value={this.state.data.name}
             inputProps={{
-              placeholder: "Eg. John Doe"
+              placeholder: "Eg. John Doe",
+              required: true
             }}
             />
           <InputBox
@@ -55,7 +69,8 @@ class ContributeForm extends React.Component {
             value={this.state.data.email}
             inputProps={{
               placeholder: "Eg. hello@world.com",
-              type: "email"
+              type: "email",
+              required: true
             }}
             />
           <AddressInputBox
@@ -64,7 +79,8 @@ class ContributeForm extends React.Component {
             onAddressSelected={this.onValueChange}
             value={this.state.data.address}
             inputProps={{
-              placeholder: "Start typing..."
+              placeholder: "Start typing...",
+              required: true
             }}
             />
           <InputBox
@@ -76,15 +92,16 @@ class ContributeForm extends React.Component {
             inputProps={{
               placeholder: "Eg. 9876543210",
               type: "tel",
-              pattern: '^\\+?\\d{10}$'
+              pattern: '^\\+?\\d{10}$',
+              required: true
             }}
             />
-          <InputBox
-            label="Your Name"
-            placeholder="Eg. John Doe"
-            id="name"
+          <Select
+            label="Select an initiative to contribute to"
+            id="initiative"
             onChange={this.onValueChange}
             value={this.state.data.name}
+            options={this.initiativeOptions}
             />
           <input type="submit" className="primary-button form-element" value="Submit"/>
         </div>

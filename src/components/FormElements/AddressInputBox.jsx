@@ -15,16 +15,26 @@ class AddressInputBox extends Component {
   }
 
   render(){
+    let me = this;
     return (
       <div className={"form-element addressinputbox" + (this.props.id ? (" " + this.props.id) : "")}>
         <label>{this.props.label}
         <GooglePlacesAutocomplete
           onSelect={this.onAddressSelected}
-          placeholder={this.props.placeholder}
           autocompletionRequest={{
             componentRestrictions: {
               country: ['in']
             }
+          }}
+          renderInput={(props) => {
+            props = Object.assign(props, me.props.inputProps)
+            return (
+              <div className="custom-wrapper">
+                <input
+                  {...props}
+                />
+              </div>
+            )
           }}
         />
         </label>
