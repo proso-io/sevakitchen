@@ -15,9 +15,9 @@ class Select extends React.Component {
 
   render(){
     return (
-      <div className={"form-element select" + (this.props.id ? (" " + this.props.id) : "")} onChange={this.handleChange} >
+      <div className={"form-element select" + (this.props.id ? (" " + this.props.id) : "")}  >
         <label>{this.props.label}
-          <select>
+          <select onChange={this.handleChange}>
             {
               this.props.options.map((option) => (
                 <option key={option.value} value={option.value} >{option.label}</option>

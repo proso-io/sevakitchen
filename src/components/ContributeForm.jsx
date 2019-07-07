@@ -5,13 +5,17 @@ import { initiativeCardsData } from '../constants';
 import InputBox from './FormElements/InputBox';
 import AddressInputBox from './FormElements/AddressInputBox';
 import Select from './FormElements/Select';
+import Alert from './Alert';
 
 class ContributeForm extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {
-      data: this.props.initialData
+      data: this.props.initialData,
+      showError: false,
+      showSuccess: false,
+      submitBtnState: {loading: false}
     }
     this.onValueChange = this.onValueChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -25,7 +29,7 @@ class ContributeForm extends React.Component {
         label: ini.title
       }
     })
-    this.state.data.initiative = this.state.data.initiative || this.initiativeOptions[0];
+    this.state.data.initiative = this.state.data.initiative || this.initiativeOptions[0].value;
   }
 
   onValueChange(value, id){
@@ -37,9 +41,35 @@ class ContributeForm extends React.Component {
 
   onSubmit(e){
     e.preventDefault();
-    this.state.data.address = this.state.data.address.description;
-    this.state.data.initiative = this.state.data.initiative.value;
+    this.setState({submitBtnState: {loading: true}});
+
+    let formData = new FormData(), me = this;
+    let url = "/apis/v1/requestContribute";
+
+    formData.append("name", this.state.data.name);
+    formData.append("phone", this.state.data.phone);
+    formData.append("email", this.state.data.email);
+    formData.append("address", this.state.data.address.description);
+    formData.append("initiative", this.state.data.initiative);
+
+    fetch(url, {
+        method: 'post',
+        body: formData,
+    })
+    .then((res) => res.json())
+    .then(function(data){
+      me.setState({showSuccess: true});
+      me.setState({submitBtnState: {loading: false}});
+    }).catch(function(err){
+      console.log(err);
+      me.setState({showError: true});
+      me.setState({submitBtnState: {loading: false}});
+    });
     // this.props.onSubmitClicked(this.state.data);
+  }
+
+  onCloseAlert = () => {
+    this.setState(this.state.showSuccess ? {showSuccess: false} : {showError: false});
   }
 
   render(){
@@ -103,8 +133,10 @@ class ContributeForm extends React.Component {
             value={this.state.data.name}
             options={this.initiativeOptions}
             />
-          <input type="submit" className="secondary-button form-element" value="Submit"/>
+          <input type="submit" className="secondary-button form-element" value={this.state.submitBtnState.loading ? "Submitting.." : "Submit"} />
         </div>
+        <Alert type="success" show={this.state.showSuccess} onClose={this.onCloseAlert} />
+        <Alert type="error" show={this.state.showError} onClose={this.onCloseAlert} />
       </form>
     )
   }
