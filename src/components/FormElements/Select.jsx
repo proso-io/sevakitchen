@@ -16,13 +16,15 @@ class Select extends React.Component {
   render(){
     return (
       <div className={"form-element select" + (this.props.id ? (" " + this.props.id) : "")} onChange={this.handleChange} >
-        <select>
-          {
-            this.props.options.map((option) => (
-              <option key={option.value} value={option.value} >{option.label}</option>
-            ))
-          }
-        </select>
+        <label>{this.props.label}
+          <select>
+            {
+              this.props.options.map((option) => (
+                <option key={option.value} value={option.value} >{option.label}</option>
+              ))
+            }
+          </select>
+        </label>
       </div>
     );
   }

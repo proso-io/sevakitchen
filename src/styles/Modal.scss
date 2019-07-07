@@ -39,13 +39,15 @@
     height: auto;
     visibility: visible;
     opacity: 1;
+    overflow: auto;
   }
 
+  max-height: 85%;
   background-color: #fff;
   max-width: 40%;
   position: fixed;
   left: 30%;
-  top: 12%;
+  top: 8%;
   border-radius: 4px;
   z-index: 999;
   pointer-events: auto;

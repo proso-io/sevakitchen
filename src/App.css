@@ -68,3 +68,11 @@
 .form-container .description {
   line-height: 1.5;
 }
+
+.secondary-button {
+  background: #8D2B0B;
+  border-radius: 0;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #fff;
+}

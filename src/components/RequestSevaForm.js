@@ -6,7 +6,7 @@ import InputBox from './FormElements/InputBox';
 import AddressInputBox from './FormElements/AddressInputBox';
 import Select from './FormElements/Select';
 
-class ContributeForm extends React.Component {
+class RequestSevaForm extends React.Component {
 
   constructor(props){
     super(props);
@@ -28,7 +28,7 @@ class ContributeForm extends React.Component {
     this.state.data.initiative = this.state.data.initiative || this.initiativeOptions[0];
   }
 
-  onValueChange(value, id){
+  onValueChange(value,id){
     this.setState((state) => {
       state.data[id] = value;
       return state;
@@ -46,10 +46,10 @@ class ContributeForm extends React.Component {
     return (
       <form onSubmit={this.onSubmit} className="form-container contribute-form">
         <h2 className="title">
-          Contribute to Seva Kitchen
+          Request Seva
         </h2>
         <p className="description">
-          Fill this form to be able to contribute to Seva Kitchen. Our team will reach out to you and find the best place for you to contribute.
+          If you are an NGO, fill out this form to request Seva. Our team will reach out to the contact details entered here to discuess your requirement.
         </p>
         <div className="form-inputs">
           <InputBox
@@ -74,7 +74,7 @@ class ContributeForm extends React.Component {
             }}
             />
           <AddressInputBox
-            label="Your location (we'll use this to connect you to chapters in your area)"
+            label="Your location"
             id="address"
             onAddressSelected={this.onValueChange}
             value={this.state.data.address}
@@ -96,13 +96,6 @@ class ContributeForm extends React.Component {
               required: true
             }}
             />
-          <Select
-            label="Select an initiative to contribute to"
-            id="initiative"
-            onChange={this.onValueChange}
-            value={this.state.data.name}
-            options={this.initiativeOptions}
-            />
           <input type="submit" className="secondary-button form-element" value="Submit"/>
         </div>
       </form>
@@ -111,7 +104,7 @@ class ContributeForm extends React.Component {
 
 }
 
-ContributeForm.propTypes = {
+RequestSevaForm.propTypes = {
   initialData: PropTypes.shape({
     name: PropTypes.string,
     email: PropTypes.string,
@@ -121,8 +114,8 @@ ContributeForm.propTypes = {
   })
 }
 
-ContributeForm.defaultProps = {
+RequestSevaForm.defaultProps = {
   initialData: {}
 }
 
-export default ContributeForm;
+export default RequestSevaForm;
