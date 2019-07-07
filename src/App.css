@@ -31,3 +31,83 @@
 .landingPageContainer {
   width: 100%;
 }
+
+.primary-button {
+  border: 1px solid #DE911D;
+  border-radius: 25px;
+  padding: 14px;
+  color: #DE911D;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  margin: 5px;
+}
+
+.form-element {
+  margin-top: 25px;
+}
+
+.form-inputs {
+  width: 80%;
+}
+
+.form-container {
+  padding: 20px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-inputs {
+    width: 90%;
+  }
+
+  .form-container {
+    padding: 20px 10px;
+  }
+}
+
+.form-container .description {
+  line-height: 1.5;
+}
+
+.secondary-button {
+  background: #8D2B0B;
+  border-radius: 0;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.alert {
+  padding: 0px 20px;
+  width: 80%;
+  margin: 20px 0px;
+  position: relative;
+}
+.alert.alert-success {
+  background: #C7EA8F;
+  color: #94C843;
+  border: 1px solid #94C843;
+}
+.alert.alert-error {
+  background: #FACDCD;
+  color: #D64545;
+  border: 1px solid #D64545;
+}
+.alert .alert-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.alert .alert-close-btn a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.alert.alert-error a {
+  color: #D64545;
+}
+.alert.alert-success a {
+  color: #94C843;
+}

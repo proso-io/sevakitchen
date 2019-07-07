@@ -1,12 +1,12 @@
 .inputbox {
-  width: 100%;
+  width: 94%;
 }
 
 .inputbox label {
 
 }
 
-.inputbox textarea {
+.inputbox input {
   display: block;
   resize: none;
   width: 100%;

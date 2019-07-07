@@ -1,0 +1,20 @@
+.addressinputbox {
+  .google-places-autocomplete input{
+    display: block;
+    resize: none;
+    width: 94%;
+    font-size: inherit;
+    border: 2px solid #888;
+    min-height: 24px;
+    padding: 14px 9px;
+    margin-top: 5px;
+    height: 0px;
+    white-space: nowrap;
+    box-shadow: none;
+  }
+
+  .google-places-autocomplete__suggestions-container {
+    z-index: 4;
+    cursor: pointer;
+  }
+}
