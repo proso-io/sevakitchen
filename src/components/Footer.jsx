@@ -13,9 +13,11 @@ class Footer extends Component {
               <div className="footer-column-title">{title.title}</div>
               {title.children.map(children => {
                 return (
-                  <a key={children.label} className="links" href={children.link}>
+                  children.link ?
+                  <a target="_blank" key={children.label} className="links" href={children.link}>
                     <div>{children.label}</div>
                   </a>
+                  : <div className="links">{children.label}</div>
                 );
               })}
             </div>
