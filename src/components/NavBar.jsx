@@ -9,7 +9,7 @@ class NavBar extends Component {
       <div className="navbar">
         <div className="navbar-left">
           <a href="/">
-            <img className="navbar-logo" src="/images/headericon.jpg" alt="logo" />
+            <img className="navbar-logo" src="images/headericon.jpg" alt="logo" />
           </a>
         </div>
         <div className="navbar-right">

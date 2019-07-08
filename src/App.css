@@ -87,8 +87,8 @@
 }
 .alert.alert-success {
   background: #C7EA8F;
-  color: #94C843;
-  border: 1px solid #94C843;
+  color: #63921A;
+  border: 1px solid #63921A;
 }
 .alert.alert-error {
   background: #FACDCD;
@@ -109,5 +109,5 @@
   color: #D64545;
 }
 .alert.alert-success a {
-  color: #94C843;
+  color: #63921A;
 }
