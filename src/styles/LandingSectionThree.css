@@ -1,0 +1,27 @@
+.ls3-container {
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.ls3-logo {
+    width: 180px;
+    height: auto;
+}
+
+.ls3-title {
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.ls3-children {
+    margin: 20px;
+    padding: 20px;
+}
+
+.ls3-section-container {
+  padding: 20px;
+}

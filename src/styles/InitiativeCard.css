@@ -6,21 +6,22 @@
   justify-content: flex-start;
   align-items: stretch;
   min-height: 400px;
-  box-shadow: 1px 2px 3px #ddd;
-  color: #DE911D;
+  box-shadow: 1px 1px 3px #FADB5F;
+  color: #CB6E17;
   background: #fff;
 }
 .initiative-card .image-container {
   width: 100%;
-  height: 50%;
-  max-height: 200px;
+  height: 60%;
+  max-height: 210px;
   overflow: hidden;
+  background: #FADB5F;
 }
 .initiative-card .image-container .image {
   width: 100%;
 }
 .initiative-card .body-container {
-  height: 50%;
+  height: 40%;
   padding: 10px;
   text-align: justify;
   background: white;
@@ -36,7 +37,7 @@
   background: none;
   border-top: 1px solid #F0B429;
   width: 100%;
-  color: #DE911D;
+  color: #CB6E17;
 }
 .initiative-card .contribute-button h3 {
   margin: 0;

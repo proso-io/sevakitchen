@@ -17,7 +17,7 @@ class Footer extends Component {
                   <a target="_blank" key={children.label} className="links" href={children.link}>
                     <div>{children.label}</div>
                   </a>
-                  : <div className="links">{children.label}</div>
+                  : <div key={children.label} className="links">{children.label}</div>
                 );
               })}
             </div>

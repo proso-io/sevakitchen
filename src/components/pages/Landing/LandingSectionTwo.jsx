@@ -6,18 +6,17 @@ class LandingSectionTwo extends Component {
   state = {};
   render() {
     return (
-      <div>
-        <h1 className="ls2-title">FEATURED IN</h1>
+      <div className="ls2-section-container">
+        <h1 className="ls2-title">Our Partners in Seva</h1>
         <div className="ls2-container">
-          {feature_data.map((children, idx) => {
-            return (
-              <div key={idx} className="ls2-children">
-                <a target="_blank" href={children.link}>
-                  <img className="ls2-logo" src={children.img} alt="logo" />
-                </a>
-              </div>
-            );
-          })}
+          <div className="ls2-image-container">
+            <img className="ls2-logo"  src="/images/parle.jpeg" />
+            <h4>Parle Products</h4>
+          </div>
+          <div className="ls2-image-container">
+            <img className="ls2-logo" src="/images/scoops-logo.png" />
+            <h4>Scoops Ice-cream</h4>
+          </div>
         </div>
       </div>
     );

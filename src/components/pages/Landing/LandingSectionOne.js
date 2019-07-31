@@ -44,8 +44,8 @@ export default class LandingSectionOne extends Component {
           <h1>SERVING A PLATEFUL OF LOVE</h1>
           <h4 className="tagline">Seva kitchen helps feed the needy through it's various initiatives.</h4>
           <div className="ctaGroup">
-            <button className="primaryBtn" onClick={this.onContributeClick}><h4>CONTRIBUTE TO A SEVA</h4></button>
-            <button className="primaryBtn" onClick={this.onRequestSevaClick}><h4>REQUEST A SEVA (FOR NGOs)</h4></button>
+            <button className="primaryBtn" onClick={this.onContributeClick}><h4>Sign Up for Seva</h4></button>
+            <button className="primaryBtn" onClick={this.onRequestSevaClick}><h4>Need Seva (For NGOs)</h4></button>
           </div>
           <InitiativeGroup
             data = {initiativeCardsData}
