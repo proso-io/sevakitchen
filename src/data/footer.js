@@ -2,9 +2,9 @@ const footer_data = [
   {
     title: "SEVA PARTNERS",
     children: [
-      { icon: "", label: "Proso.io", link: "#" },
-      { icon: "", label: "Giving Tuesday India", link: "#" },
-      { icon: "", label: "Seva Kitchen food sharing app", link: "#" }
+      { icon: "", label: "Proso.io", link: "https://www.proso.io" },
+      { icon: "", label: "Giving Tuesday India", link: "https://www.givingtuesdayindia.org/" },
+      { icon: "", label: "Seva Kitchen food sharing app", link: "https://play.google.com/store/apps/details?id=com.appsthentic.sevakitchen&hl=en_IN" }
     ]
   },
   {
@@ -14,17 +14,16 @@ const footer_data = [
   {
     title: "SOCIAL LINKS",
     children: [
-      { icon: "fa fa-whatsapp", label: "WhatsApp", link: "#" },
-      { icon: "fa fa-instagram", label: "Instagram", link: "#" },
-      { icon: "fa fa-facebook", label: "Facebook", link: "#" }
+      { icon: "fa fa-facebook", label: "Facebook", link: "https://www.facebook.com/SevaKitchen/" },
+      { icon: "fa fa-twitter", label: "Twitter", link: "https://twitter.com/sevakitchen?lang=en" }
     ]
   },
 
   {
     title: "SEVA LOCATIONS",
     children: [
-      { link: "#", label: "More than hundred hospitals" },
-      { link: "#", label: "50 Schools" }
+      { label: "More than a hundred hospitals" },
+      { label: "50 Schools" }
     ]
   }
 ];

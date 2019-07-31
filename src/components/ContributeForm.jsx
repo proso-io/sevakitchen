@@ -76,10 +76,10 @@ class ContributeForm extends React.Component {
     return (
       <form onSubmit={this.onSubmit} className="form-container contribute-form">
         <h2 className="title">
-          Contribute to Seva Kitchen
+          Sign Up for Seva
         </h2>
         <p className="description">
-          Fill this form to be able to contribute to Seva Kitchen. Our team will reach out to you and find the best place for you to contribute.
+          Fill this form to be able to sign up for Seva. Our team will reach out to you and find the best place for you to contribute.
         </p>
         <div className="form-inputs">
           <InputBox

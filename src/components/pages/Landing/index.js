@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import LandingSectionOne from "./LandingSectionOne";
 import LandingSectionTwo from "./LandingSectionTwo";
+import LandingSectionThree from "./LandingSectionThree";
 
 
 export default class LandingPage extends Component {
@@ -12,6 +13,7 @@ export default class LandingPage extends Component {
     return <div className="landingPageContainer">
       <LandingSectionOne />
       <LandingSectionTwo />
+      <LandingSectionThree />
     </div>
   }
 }

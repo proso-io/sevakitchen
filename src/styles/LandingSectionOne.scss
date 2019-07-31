@@ -1,26 +1,29 @@
 .landing-section-1 {
   text-align: center;
-  background-color: #FEF1C6;
+  background-color: #FFFBEA;
   padding: 20px 0 0 0;
   position: relative;
-  color: #e8b340;
+  color: #CB6E17;
 
   .ctaGroup {
     display: flex;
-    min-width: 30%;
-    width: 32%;
+    min-width: 25%;
+    width: 25%;
     margin: 5vh auto;
     justify-content: space-between;
 
     .primaryBtn {
-      border: 1px solid #DE911D;
+      border: 1px solid #CB6E17;
       border-radius: 25px;
       padding: 14px;
-      color: #DE911D;
+      color: #CB6E17;
       outline: none;
       cursor: pointer;
       background: white;
       margin: 5px;
+      h4 {
+        color: #CB6E17;
+      }
     }
   }
 
@@ -45,20 +48,20 @@
 
     .triangle {
       border-top: 200px solid transparent;
-	    border-left: 100vw solid #e8b340;
+	    border-left: 100vw solid #fadb5f;
     }
 
     .rect {
       height: 40%;
       width: 100%;
-      background: #e8b340;
+      background: #fadb5f;
     }
   }
 
   .content {
     position: relative;
     z-index: 2;
-    margin-top: 15vh;
+    margin-top: 10vh;
     padding: 10px;
   }
 

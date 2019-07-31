@@ -1,24 +1,31 @@
-.ls2-container {
-    display: flex;
-    margin: 20px auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-}
-
 .ls2-logo {
     width: 180px;
     height: auto;
+    background: #fff;
+    padding: 10px;
 }
-
 .ls2-title {
-    text-align: center;
-    color: brown;
-    margin-top: 10vh;
+  text-align: center;
 }
-
-.ls2-children {
-    margin: 20px;
-    padding: 20px;
+.ls2-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5em auto 3em auto;
+}
+.ls2-section-container {
+  padding: 3em 3em 1em 3em;
+  background: #FFFBEA;
+}
+.ls2-image-container {
+  text-align: center;
+}
+.ls2-image-container img {
+  display: block;
+}
+.ls2-image-container h4 {
+  margin-top: 10px;
+  display: block;
 }

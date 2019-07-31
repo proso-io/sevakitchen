@@ -6,7 +6,8 @@
 
     /* set base values */
     --text-base-size: 1em;
-    --text-scale-ratio: 1.25;
+    --text-scale-ratio: 1.3;
+    --color-text-heading: #CB6E17;
 
     /* type scale */
     --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
